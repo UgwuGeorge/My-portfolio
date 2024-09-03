@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=M, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- My stylesheet link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- my font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="container">
+
+        <!-- This is the header container different links to my different socials
+        and it also contains a bit of description about me  -->
+        <header class="header-main">
+            <div class="header navbar">
+               <div class="header-main__title"><h2>GeorgeUgwu</h2></div>
+
+               <nav class="header-main__icons">
+                    <div class="header-main__icon">
+                       <a href="https://github.com/UgwuGeorge"><i class="fa-brands fa-github fa-xl"></i></a>
+                    </div>
+                    <div class="header-main__icon">
+                        <a href="https://www.linkedin.com/in/chidiogo-ugwu-0a29ab305/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                    </div>
+                    <div class="header-main__icon">
+                        <a href="https://x.com/DoggieMe1"><i class="fa-brands fa-x-twitter fa-xl"></i></a>
+                    </div>
+                    <div class="header-main__icon">
+                        <a href="https://www.instagram.com/doggiee556/?hl=en"><i class="fa-brands fa-instagram fa-xl"></i> </a>
+                    </div>
+                </nav>
+                
+                
+            </div>
+
+            <div class="header-main_second--box">
+                <div class="header-main__intro--text">
+                    <h1>Nice to meet you! <br>I'm <span>George Ugwu</span>.</h1>
+                    <p>
+                        Based in Nigeria, I'm a front-end developer passionate
+                        about building accessible websites that users love.
+                    </p>
+
+                    <div class="header-main__contact contact"><a href=""><span>CONTACT ME</span></a></div>
+                </div>
+                
+                <div class="header-main__image">
+                    <img src="img/IMG_20221025_155825 (2).jpg" alt="the owner of the page">
+                </div>
+            </div>
+        </header>
+    
+
+        <!-- This is the main body of the portfolio which contains primarily my
+        my experience and my completed projects  -->
+        <main class="main-content">
+            <div class="main-content__three--column">
+                <div class="three--column__content">
+                    <h1>HTML</h1>
+                    <P>6 Months Experience</P>
+                </div>
+                <div class="three--column__content">
+                    <h1>CSS</h1>
+                    <P>6 Months Experience</P>
+                </div>
+                <div class="three--column__content">
+                    <h1>Javascript</h1>
+                    <P>3 Months Experience</P>
+                </div>
+            </div>
+        
+
+            <div class="main-content__project">
+                <div class="main-content___project--header">
+                    <div class="project--header_main-title">
+                        <h1>Projects</h1>
+                    </div>
+                    <div class="project--header contact">
+                        <a href=""><span>CONTACT ME</span></a>
+                    </div>
+                </div>
+
+                <div class="main-content___project--works">
+                    <div class="project--works_image">
+                        <img src="img/Screenshot (4).png" alt="my portfolio">
+                    </div>
+                    <div class="project--works_image---description">
+                        <h3>DESIGN PORTFOLIO</h3>
+                        <div class="project--works__column">
+                            <P>HTML</P> <P>CSS</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+    </div>
+
+    
+        <!-- This is the footer which contains primarily, 
+            the contact details and form -->
+            <footer class="footer">
+                <div class="footer--contact container">
+                    <div class="footer--contact_text">
+                        <h1>Contact</h1>
+                        <p>I would love to hear about your
+                            project and how I could help. Please
+                            fill in the form and I'll get back to 
+                            you as soon as possible.
+                        </p>
+                    </div>
+                    <div class="footer--contact_form">
+                        <form action="" id="contact-form" method="post">
+                            <div class="form-group">
+                                <input type="text" name="Fullname" id="Fullname" placeholder="NAME">
+                                <span id="nameError" class="error"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="Email" id="Email" placeholder="EMAIL">
+                                <span id="emailError" class="error"></span>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="Message" id="Message">MESSAGE</textarea>
+                            </div>
+
+                            <div class="send-msg__btn">
+                                <input type="submit" value="SEND MESSAGE" onclick="validateForm()">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="footer-navbar">
+                    <div class="footer-main__title"><h2>UgwuGeorge</h2></div>
+     
+                    <nav class="footer-main__icons">
+                         <div class="footer-main__icon">
+                             <a href="https://github.com/UgwuGeorge"><i class="fa-brands fa-github fa-xl"></i></a>
+                         </div>
+                         <div class="footer-main__icon">
+                             <a href="https://www.linkedin.com/in/chidiogo-ugwu-0a29ab305/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                         </div>
+                         <div class="footer-main__icon">
+                             <a href="https://x.com/DoggieMe1"><i class="fa-brands fa-x-twitter fa-xl"></i></a>
+                         </div>
+                         <div class="footer-main__icon">
+                             <a href="https://www.instagram.com/doggiee556/?hl=en"><i class="fa-brands fa-instagram fa-xl"></i> </a>
+                         </div>
+                     </nav>
+                     
+                     
+                 </div>
+            </footer>
+    
+<script src="Javascript/script.js"></script>
+</body>
+</html>

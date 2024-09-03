@@ -1,0 +1,266 @@
+:root {
+    --main-color: #151515;
+    --footer-color: #242424;
+
+    --main-text--color: #ffffff;
+    --sub-text--color: #D3D3D3;
+    --contact-text--color: #898989;
+    
+    --main-border--color: #B0B0B0;
+    --sub-border--color: #4EE29F;
+}
+
+body {
+    margin: 0;
+    background-color: var(--main-color);
+}
+
+.container {
+    /* border: 2px solid red; */
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*************** HEADER STYLING ************/
+
+.header-main {
+    border-bottom: 1px solid var(--main-border--color);
+    padding-bottom: 5rem;
+}
+
+a {
+    color: var(--main-text--color);
+}
+
+
+a:hover {
+    color: var(--main-border--color);
+} 
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    color: var(--main-text--color);
+    justify-content: space-between;
+    width: 95%;
+    /* border: 2px solid blue; */
+}
+
+.header-main__title {
+    display: flex;
+    /* border: 2px solid green; */
+    width: 80%;
+}
+
+.header-main__icons {
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid yellow; */
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+}
+
+img {
+    display: relative;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.header-main_second--box {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-main__intro--text {
+    /* border: 2px solid purple; */
+    max-width: 60%;
+}
+
+.header-main__intro--text h1 {
+    color: var(--main-text--color);
+    font-size: 5rem;
+}
+
+.header-main__intro--text h1 span {
+    border-bottom: 5px solid var(--sub-border--color);
+}
+
+.header-main__intro--text p {
+    color: var(--sub-text--color);
+    /* border: 2px solid brown; */
+    width: 60%;
+}
+
+.header-main__image {
+    /* border: 2px solid lime; */
+    max-width: 40%;
+}
+
+.contact {
+    color: var(--contact-text--color);
+    border-bottom: 3px solid var(--sub-border--color);
+    width: 6.0rem;
+    font-size: 0.90rem;
+    padding: 0.75rem 0;
+}
+
+.contact a {
+    text-decoration: none;
+}
+
+.contact:hover {
+    background-color: var(--footer-color);
+    cursor: pointer;
+}
+
+.header-main__contact {
+    margin-top: 2.5rem;
+}
+
+
+/*********** EXPERIENCE STYLING ************/
+
+/* .main-content {
+    /* border: 2px solid pink; */
+
+
+.main-content__three--column {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0 5rem;
+    /* border: 2px solid blue; */
+}
+
+.three--column__content h1{
+    color: var(--main-text--color);
+}
+
+.three--column__content p {
+    color: var(--sub-text--color);
+}
+
+.main-content___project--header {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid green; */
+    align-items: center;
+}
+
+.main-content___project--works {
+    /* border: 2px solid red;  */
+    padding-bottom: 4rem;
+}
+
+.project--header_main-title {
+    color: var(--main-text--color);
+    font-size: 2rem;
+}
+
+.project--works_image {
+    border: 0.5px  solid gainsboro;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.project--works_image---description {
+    /* border: 2px solid violet; */
+    width: 50%;
+    margin: 0 auto;
+}
+
+.project--works_image---description h3 {
+    color: var(--main-text--color);
+}
+
+.project--works__column {
+    /* border: 2px solid sandybrown; */
+    display: flex;
+    gap: 1.5rem;
+    color: var(--sub-text--color);
+}
+
+/************ THE FOOTER AND FORM STYLING **********/
+
+footer {
+    background-color: var(--footer-color);
+}
+
+.footer--contact {
+    display: flex;
+    border-bottom: 1px solid var(--main-border--color);
+    padding: 5rem 0 7rem;
+}
+
+.footer--contact_text {
+    /* border: 2px solid blueviolet; */
+    width: 50%;
+}
+
+.footer--contact_text h1 {
+    color: var(--main-text--color);
+    font-size: 3.5rem;
+}
+
+.footer--contact_text p {
+    color: var(--sub-text--color);
+    width: 60%;
+}
+
+.footer--contact_form {
+    /* border: 2px solid crimson; */
+    width: 50%;
+   align-items: center;
+   /* padding: 10rem; */
+}
+
+form {
+    /* border: 2px solid darkcyan; */
+    width: 70%;
+}
+
+input[type=text], input[type=email], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border-bottom: 2px solid var(--main-border--color); /* Gray border */
+    background-color: var(--footer-color);
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    color: #ffffff;
+  }
+
+  input[type=submit] {
+    background-color: var(--footer-color);
+    color: white;
+    padding: 12px 20px;
+    border-bottom: 3px solid var(--sub-border--color);
+    cursor: pointer;
+}
+
+.footer-navbar {
+    display: flex;
+    flex-direction: row;
+    color: var(--main-text--color);
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    /* border: 2px solid blue; */
+}
+
+.footer-main__title {
+    display: flex;
+    /* border: 2px solid green; */
+    width: 80%;
+}
+
+.footer-main__icons {
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid yellow; */
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+}
+
