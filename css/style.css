@@ -250,6 +250,7 @@ textarea {
     height: 10vw;
 }
 
+
   input[type=submit] {
     background-color: var(--footer-color);
     color: white;
@@ -260,7 +261,7 @@ textarea {
     border-right: 0;
     outline: none;
     cursor: pointer;
-    margin-inline: 29vw;
+    /* margin-inline-start: 29vw; */
     margin-top: 1.5rem;
 }
 
@@ -268,6 +269,7 @@ textarea {
     background-color: var(--contact-text--color);
     cursor: pointer;
  }
+
 
 .footer-navbar {
     display: flex;
@@ -350,7 +352,7 @@ textarea {
 
     input[type=submit] {
         font-size: 1.2rem;
-        margin-inline: 60%;
+        /* margin-inline-start: 60%; */
     }
 
    
@@ -359,6 +361,10 @@ textarea {
 /***********MOBILE STYLING*************/
 
 @media (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+
     .container {
         width: 90vw;
         margin: 0 auto;
@@ -436,6 +442,24 @@ textarea {
     form {
         margin-left: 0;
         width: 100%;
+    }
+
+    .footer--contact_text h1 {
+        font-size: 2.6rem;
+    }
+
+    .footer--contact_text p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+
+    input[type=text], input[type=email], select, textarea {
+        font-size: 0.90rem;
+    }
+
+    input[type=submit] {
+        /* margin-inline-start: 40%; */
+        font-size: 0.90rem;
     }
     
     .footer-navbar {
